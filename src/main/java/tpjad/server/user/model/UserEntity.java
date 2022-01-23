@@ -38,6 +38,16 @@ public class UserEntity implements UserDetails, Serializable {
 
     private boolean enabled = true;
 
+    private boolean deleted = false;
+
+    public boolean isDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
+    }
+
     public Team getTeam() {
         return team;
     }

@@ -41,8 +41,12 @@ public class UserServiceImplementation implements UserServiceInterface {
 
     @Override
     public UserEntity update(UserEntity user) {
-        userRepository.findById(user.getId()).orElseThrow();
-        return userRepository.save(user);
+        UserEntity oldUser = userRepository.findById(user.getId()).orElseThrow();
+        oldUser.setBadgeNumber(user.getBadgeNumber());
+        oldUser.setName(user.getName());
+        oldUser.setRole(user.getRole());
+        oldUser.setTeam(user.getTeam());
+        return userRepository.save(oldUser);
     }
 
     @Override
