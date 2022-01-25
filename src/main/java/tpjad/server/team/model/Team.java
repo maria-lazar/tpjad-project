@@ -47,6 +47,12 @@ public class Team implements Serializable {
     public Team() {
     }
 
+    public Team(String id, String name, String status) {
+        this.id = id;
+        this.name = name;
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "Team{" +

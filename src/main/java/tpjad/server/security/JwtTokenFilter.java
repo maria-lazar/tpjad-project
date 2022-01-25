@@ -20,7 +20,6 @@ import static java.util.Optional.ofNullable;
 
 @Component
 public class JwtTokenFilter extends OncePerRequestFilter {
-
     private JwtTokenUtil jwtTokenUtil;
     private UserRepository userRepository;
 

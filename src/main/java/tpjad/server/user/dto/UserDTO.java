@@ -1,4 +1,4 @@
-package tpjad.server.user.dtos;
+package tpjad.server.user.dto;
 
 
 public class UserDTO {

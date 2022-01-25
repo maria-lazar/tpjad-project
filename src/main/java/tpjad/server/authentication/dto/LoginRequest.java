@@ -1,4 +1,4 @@
-package tpjad.server.authentication.message;
+package tpjad.server.authentication.dto;
 
 public class LoginRequest {
     private String username;
@@ -7,6 +7,14 @@ public class LoginRequest {
 
     public String getUsername() {
         return username;
+    }
+
+    public LoginRequest() {
+    }
+
+    public LoginRequest(String username, String password) {
+        this.username = username;
+        this.password = password;
     }
 
     public void setUsername(String username) {

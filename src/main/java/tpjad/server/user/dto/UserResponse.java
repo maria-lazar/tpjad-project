@@ -1,4 +1,4 @@
-package tpjad.server.user.dtos;
+package tpjad.server.user.dto;
 
 import tpjad.server.team.model.Team;
 import tpjad.server.user.model.UserType;

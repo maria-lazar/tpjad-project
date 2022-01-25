@@ -5,8 +5,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import tpjad.server.team.service.TeamServiceInterface;
-import tpjad.server.user.dtos.UserDTO;
-import tpjad.server.user.dtos.UserResponse;
+import tpjad.server.user.dto.UserDTO;
+import tpjad.server.user.dto.UserResponse;
 import tpjad.server.user.model.UserEntity;
 import tpjad.server.user.service.UserServiceInterface;
 

@@ -42,6 +42,11 @@ public class UserType implements GrantedAuthority, Serializable {
         this.authority = authority;
     }
 
+    public UserType(String id, String authority) {
+        this.id = id;
+        this.authority = authority;
+    }
+
     @Override
     public String getAuthority() {
         return authority;

@@ -70,6 +70,10 @@ public class UserEntity implements UserDetails, Serializable {
         this.role = role;
     }
 
+    public UserEntity(String id) {
+        this.id = id;
+    }
+
     public String getId() {
         return id;
     }
